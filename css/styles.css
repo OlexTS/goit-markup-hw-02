@@ -7,6 +7,7 @@
 --secondary-light-txt-clr: #FFFFFF;
 --secondary-dark-txt-clr: #212121;
 --accent-txt-color: #2196F3;
+--logo-txt-clr: #000000;
     /* bg colors */
 --dark-bg-clr: #2F303A;
 --light-bg-clr: #F5F4FA;
@@ -40,7 +41,7 @@ body {font-family: var(--main-font);
     color: var(--accent-txt-color);
 }
 .header-logo {
-    color: #000000;
+    color: var(--logo-txt-clr);
 }
 .header-link {
     font-weight: 500;
@@ -94,10 +95,10 @@ button {
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
     color: var(--light-bg-clr);
+    border: none;
     
 }
 .hero-btn:hover, .hero-btn:focus {
-    color: var(--secondary-light-txt-clr);
     background-color: var(--accent-txt-color);
     }
 
@@ -176,15 +177,16 @@ button {
 
 /* Portfolio page */
 
-.portfolio-item-btn {
+.portfolio-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
     letter-spacing: 0.03em;
     color: var(--secondary-dark-txt-clr);
+    background-color: var(--light-bg-clr);
 }
-.portfolio-item-btn:hover, .portfolio-item-btn:focus {
-    color: var(--secondary-light-txt-clr);
+.portfolio-btn:hover, .portfolio-btn:focus {
+    background-color: var(--accent-txt-color);
     
 }
 .portfolio-title {
